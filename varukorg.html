@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Köp bilar</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <style>
+        .car-image{
+        width: 200px;
+        height: 200px;
+        }
+        .show{
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-bottom: 5%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .show-text{
+            padding: 15px;
+            position: absolute;
+            top: 30vh;
+            left: 20%;
+            width: 60%;
+            background-color: #fefefe;
+            border: 1px solid #888;
+        }
+        .close {
+        font-size: 40px;
+        float: right;
+        color: #000;
+        cursor: pointer;
+        }
+        .error{
+            display: none;
+            color: red;
+        }
+                </style>
+</head>
+
+<body>
+
+
+    <header>
+        <h1 class="nav-link text-center bg-dark m-0 text-primary">Bilar Webbshop</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+                <ul class="navbar-nav">
+                    <li class="nav-item btn btn-primary mr-2">
+                        <a class="nav-link text-white" href="index.html">Webbshop</a>
+                    </li>
+                    <li class="nav-item btn btn-primary ml-2">
+                        <a class="nav-link text-white" href="varukorg.html">Varukorg</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-3">
+        <div id="varukorg-car" class="container mt-3"> </div>
+        <button id="clear" type="button" class="btn btn-danger w-100">Rensa varukorg</button>
+        <div id="confirm-order" class="container mt-3"></div>
+        
+        <!-- form for costumer on checkout -->
+        <div id="costumer-form">
+            <form action="" id="form" class="form-group mt-3">
+                <input type="text" id="namn" class="form-control" placeholder="Förnamn Efternamn">
+                <span class="error">Namnet ska vara minst 2 bokstäver långt</span>
+                <input type="text" id="adress" class="form-control" placeholder="Adress">
+                <span class="error">Adressen måste vara minst 5 bokstäver långt</span>
+                <input type="number" id="telefon" class="form-control" placeholder="telefonnummer">
+                <span class="error">Nummret ska vara mellan 8 till 12 siffror</span>
+                <input type="text" id="mail" class="form-control" placeholder="Din@epost.tack">
+                <span class="error">Emailen måste vara giltig</span><br>
+                <button type="button" id="final-buy" class="btn btn-primary" disabled >KÖP</button>
+            </form>
+        </div>
+
+    
+    
+</div> <!-- container -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="cars.js"></script>
+</body>
+
+</html>

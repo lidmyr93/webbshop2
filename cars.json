@@ -1,0 +1,64 @@
+{
+    "cars" : {
+        "car1": {   
+                "model":"Volvo XC90",
+                "info":"Familjebil med 4 dörrar och tak",
+                "img" : "img/volvo.jpeg",
+                "price": "750 000"
+            },
+        "car2": {   
+                "model":"Tesla Model S",
+                "info":"Sportbil som går på el",
+                "img" : "img/tesla.jpg",
+                "price": "800 000"
+            },
+        "car3": {   
+                "model":"Dodge Challenger Hellcat",
+                "info":"Amerikansk muskelbil",
+                "img" : "img/HellCat.JPG",
+                "price": "790 000"
+            },
+        "car4": {   
+                "model":"Audi A7",
+                "info":"4-dörrars diesel",
+                "img" : "img/audi.jpg",
+                "price": "879 000"
+            },
+        "car5": {   
+                "model":"Mercedez Benz CLS-500",
+                "info":"Bra Gubbåk",
+                "img" : "img/mercede-bens-cls.jpg",
+                "price": "589 000"
+            },
+        "car6": {   
+                "model":"Corvette Stingray",
+                "info":"2-dörrars gammal amerikansk sportbil",
+                "img" : "img/c-stringray.jpg",
+                "price": "560 000"
+            },
+        "car7": {   
+                "model":"Mini Cooper S",
+                "info":"Liten men snabb",
+                "img" : "img/mini-cooper.jpg",
+                "price": "499 000"
+            },
+        "car8": {   
+                "model":"Koenigsegg Agera RS",
+                "info":"Lyxig sportbil",
+                "img" : "img/Koenigsegg_Agera_RS.JPG",
+                "price": "2 999 000"
+            },
+        "car9": {   
+                "model":"Volvo 940",
+                "info":"Gammal familjebil med 4 dörrar och tak",
+                "img" : "img/volvo-940.jpg",
+                "price": "14 900"
+            },
+        "car10": {   
+                "model":"Volvo V90",
+                "info":"Lyxig familjebil sedan",
+                "img" : "img/Volvo-v90.jpg",
+                "price": "800 000"
+            }
+    }
+}
