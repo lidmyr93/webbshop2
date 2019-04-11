@@ -194,7 +194,7 @@ function CheckForm() {
     
     //namevalidation
     $('#namn').keyup(() => {
-        let confName = /^[a-öA-Ö]{2,30}$/;
+        let confName = /^[a-öA-Ö\s]{2,30}$/;
         let name = $('#namn').val()
         if (confName.test(name)) {
             nCheck = true;
@@ -258,7 +258,7 @@ function CheckForm() {
 
     //Checks if all the fields have been correctly submitted, if so the button get enabled
     $("#form").keyup(() => {
-        if (tCheck == true && nCheck == true && aCheck == true && eCheck == true) {
+        if (tCheck == true && nCheck == true && aCheck == true && eCheck == true && localStorage.getItem('order')) {
             $("#final-buy").removeAttr("disabled")
         } else {
 
