@@ -110,7 +110,7 @@ function displayOrderedcars(){
                             </div>
                             <div class="card-block pl-5">
                                 <h4 class="card-title">${value.title}</h4>
-                                <p class="card-text">${value.price}</p>
+                                <p class="card-text">Pris :${value.price}</p>
                                 <input type="number" min="1" value="${value.quantity}" data-id="${key}">
                                 <a id="${key}" href="javascript:void(0)" class="btn btn-danger">Ta bort</a>
                             </div>
@@ -294,7 +294,7 @@ $("#final-buy").click(function (){
                                          </div>
                                          <div class="card-block pl-5">
                                             <h4 class="card-title">${value.title}</h4>
-                                            <p class="card-text">${value.price}</p>
+                                            <p class="card-text">Pris per st :${value.price}</p>
                                             <p class="card-text">Ditt antal: ${value.quantity}</p>
                                             <p class="card-text">Ditt pris:${value.quantity * value.price}</p>
                                             
